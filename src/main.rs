@@ -2,8 +2,6 @@ use std::io;
 
 
 fn main(){
-
-
     let spaces = "   ";
     let spaces = spaces.len();
 
@@ -24,6 +22,12 @@ fn main(){
     testcase07();
 
     testcase_arr();
+
+    print_labeled_measurement(5, 'h');
+
+    luck_number();
+
+    testcase_if(4);
 
 }
 
@@ -122,4 +126,30 @@ fn testcase_arr(){
 
     println!("The value of the element at index {index} is: {element}");
 
+}
+
+
+fn print_labeled_measurement(value: i32, unit_label: char) {
+    println!("The measurement is: {value}{unit_label}");
+}
+
+fn luck_number(){
+
+    let lucky_number = 7; // I'm feeling lucky today
+    println!("luck number value is {}", lucky_number);
+}
+
+fn testcase_if(value: u32){
+
+    let mut number = value;
+
+    if number % 4 == 0 {
+        println!("number is divisible by 4");
+    } else if number % 3 == 0 {
+        println!("number is divisible by 3");
+    } else if number % 2 == 0 {
+        println!("number is divisible by 2");
+    } else {
+        println!("number is not divisible by 4, 3, or 2");
+    }
 }
