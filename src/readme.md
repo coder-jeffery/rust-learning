@@ -22,3 +22,5 @@ fn main(){
 // 检查代码 cargo check
 
 // 发布构建项目 cargo build --release
+
+<!-- cargo update -->
