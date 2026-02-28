@@ -20,7 +20,7 @@ fn main(){
     print_number();
 
     bool_case01();
-    
+
     con_case02();
 }
 fn another_function() {
@@ -93,6 +93,14 @@ fn bool_case01(){
 fn con_case02(){
     let condition = true;
     let number = if condition { 5 } else { 6 };
+
+    println!("The value of number is: {number}");
+}
+
+fn con_case03(){
+    let condition = true;
+
+    let number = if condition { 5 } else { "six" };
 
     println!("The value of number is: {number}");
 }
